@@ -11,3 +11,111 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.App{
+  background-color: #F9D689;
+}
+.navbar {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
+  padding: 1rem;
+  background-color: #F9D689; 
+}
+
+.portfoliologo {
+  color: #6C3428;
+  font-family: serif;
+  margin-right: 40px;
+  font-weight: bold;
+}
+
+.menu {
+  list-style: none;
+  display: flex; 
+  font-family: "Sen", serif;
+}
+.nav-link:hover{
+  color: #229ed9;
+  background-color: #F9D689;
+}
+
+.menu li {
+  margin-left: 20px; 
+}
+
+.nav-link {
+  color: #6C3428;
+  text-decoration: none;
+  padding: 0.5rem 1rem; 
+  font-weight: bold;
+}
+
+.nav-link.active {
+  color: #ffffff; 
+}
+.home-container {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space between content and image */
+  align-items: center;
+  padding: 2rem; /* Adjust padding as needed */
+  background-color: #F9D689; /* Set background color */
+}
+
+.content {
+  text-align: left; 
+  max-width: 500px; 
+}
+
+.content h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.content p {
+  color: #666; 
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.social-media {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns with equal width */
+  grid-gap: 0.1rem; /* Space between icons */
+  
+}
+.social-media a:hover {
+  background-color: #F9D689; 
+  border: 3px solid #000;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+
+
+
+
+
+.download-btn {
+  background-color: #BA704F; 
+  color: #CEE6F3;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.download-btn:hover{
+  background-color: #6C3428;
+  color: #E8F0F4;
+}
+
+.image-container {
+  /* Style for the image container */
+}
