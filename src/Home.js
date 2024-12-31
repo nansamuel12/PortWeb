@@ -16,7 +16,7 @@ import Animation from "./Animation";
   <a href="https://www.telegram.com/" target="_blank" rel="noopener noreferrer">
     <img src="/asset/telegram.png" alt="Telegram" />
   </a>
-  <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+  <a href="https://www.instagram.com/" targbashet="_blank" rel="noopener noreferrer">
     <img src="/asset/instagram.png" alt="Instagram" />
   </a>
   <a href="https://www.whatsapp.com/" target="_blank" rel="noopener noreferrer">

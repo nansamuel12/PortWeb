@@ -6,7 +6,7 @@ import './index.css';
 const Navigation = () => {
     return (
       <nav className="navbar"> 
-        <h1 className="portfoliologo">Portfolio</h1> 
+        <h1 className="portfoliolo00go">Portfolio</h1> 
         <ul className="menu"> 
           <li><NavLink to="/Home" className="nav-link">Home</NavLink></li>
           <li><NavLink to="/About" className="nav-link">About</NavLink></li>

@@ -25,8 +25,10 @@ code {
 .portfoliologo {
   color: #6C3428;
   font-family: serif;
-  margin-right: 40px;
+  margin-right: 50px; 
   font-weight: bold;
+  
+
 }
 
 .menu {
@@ -68,7 +70,7 @@ code {
 
 .content h1 {
   font-size: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .content h2 {
@@ -84,17 +86,18 @@ code {
 
 .social-media {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 columns with equal width */
+  grid-template-columns: repeat(4, 2fr); /* 4 columns with equal width */
   grid-gap: 0.1rem; /* Space between icons */
   
 }
 .social-media a:hover {
-  background-color: #F9D689; 
-  border: 3px solid #000;
+  display: grid;
+  grid-template-columns: repeat(3, 2fr); /* 4 columns with equal width */
+  grid-gap: 0.02rem; /* Space between icons */
+   background-color: #F9D689; 
+  border: 2px solid #000;
   width: 40px;
   height: 40px;
-  align-items: center;
-  justify-content: center;
   border-radius: 50%;
 }
 
@@ -104,6 +107,7 @@ code {
 
 
 .download-btn {
+  margin-top: 21px;
   background-color: #BA704F; 
   color: #CEE6F3;
   padding: 1rem 2rem;
