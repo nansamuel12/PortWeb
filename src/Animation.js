@@ -2,40 +2,29 @@ import React, { useState, useEffect } from 'react';
 
 const Animation = () => {
   const [text, setText] = useState('');
-  const fullText1 = 'Frontend Developer';
-  const fullText2 = 'UI/UX Designer';
-  const fullText3 = 'QA';
+  const fullTexts = ['Frontend Developer', 'UI/UX Designer', 'QUALITY ASSURANCE'];
+  const [currentIndex, setCurrentIndex] = useState(0); 
 
   useEffect(() => {
     const intervalId = setInterval(() => {
-      if (text === fullText1) {
-        clearInterval(intervalId);
-        setTimeout(() => {
-          setText(''); 
-          setTimeout(() => {
-            setText(fullText2); 
-          }, 500); 
-        }, 500); 
-      } else if (text === fullText2) {
-        clearInterval(intervalId);
-        setTimeout(() => {
-          setText(''); 
-          setTimeout(() => {
-            setText(fullText3); 
-          }, 500); 
-        }, 500); 
-      } else if (text === fullText3) {
-        clearInterval(intervalId);
+      const currentText = fullTexts[currentIndex];
+
+      if (text === currentText) {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % fullTexts.length); 
+        setText(''); 
       } else {
-        setText(text + fullText1[text.length]); 
+        setText(text + currentText[text.length]); 
       }
-    }, 100); // Adjust interval for typing speed
+    }, 200); // Adjust interval for typing speed
 
     return () => clearInterval(intervalId); 
-  }, [text]);
+  }, [text, currentIndex]); 
 
   return (
-    <span>{text}</span> 
+    <> 
+      <span className='andI'>And I am </span> 
+      <span className='animate-text'>{text}</span> 
+    </>
   );
 };
 
